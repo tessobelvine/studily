@@ -6,8 +6,8 @@ import ButtonPrimary from "./ButtonPrimary";
 
 export default function () {
   return (
-    <section className="bg-slate-900 p-4">
-      <div className="container mx-auto flex justify-between  items-center">
+    <section className="bg-slate-900 p-4 sticky top-0">
+      <div className="container mx-auto flex justify-between  items-center ">
         <div className="flex gap-14 justify-between">
           <Link href={'/'} className="font-black text-blue-900 text-sm lg:text-3xl">STUDILY </Link>
           <input

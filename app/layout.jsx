@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main className="container m-auto p-4 min-h-screen">{children}</main>
         <Footer />
+        <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
       </body>
     </html>
   );
