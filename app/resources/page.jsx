@@ -1,10 +1,14 @@
 "use client";
+// import Tables from"@/components/Tables";
+
+
 
 import { Sidebar } from "flowbite-react";
 import {
   HiArrowSmRight,
   HiChartPie,
   HiInbox,
+  FaDropbox,
   HiShoppingBag,
   HiTable,
   HiUser,
@@ -20,31 +24,33 @@ export default function page() {
           <Sidebar.Items>
             <Sidebar.ItemGroup>
               <Sidebar.Item href="#" icon={HiChartPie}>
-                Dashboard
+                CATEGORIES
               </Sidebar.Item>
-              <Sidebar.Collapse icon={HiShoppingBag} label="Resourses">
+              <Sidebar.Collapse icon={FaDropbox} label="Resourses">
                 <Sidebar.Item href="/resourses/products">Products</Sidebar.Item>
                 <Sidebar.Item href="/resourses/sales">Sales</Sidebar.Item>
               </Sidebar.Collapse>
-              <Sidebar.Item href="#" icon={HiInbox}>
-                Inbox
-              </Sidebar.Item>
-              <Sidebar.Item href="#" icon={HiUser}>
-                Users
-              </Sidebar.Item>
-              <Sidebar.Item href="#" icon={HiShoppingBag}>
-                Products
-              </Sidebar.Item>
-              <Sidebar.Item href="#" icon={HiArrowSmRight}>
-                Sign In
-              </Sidebar.Item>
-              <Sidebar.Item href="#" icon={HiTable}>
-                Sign Up
-              </Sidebar.Item>
+
+              <Sidebar.Collapse icon={FaDropbox} label="Resourses">
+                <Sidebar.Item href="/resourses/products">Products</Sidebar.Item>
+                <Sidebar.Item href="/resourses/sales">Sales</Sidebar.Item>
+              </Sidebar.Collapse>
+
+              <Sidebar.Collapse icon={FaDropbox} label="Resourses">
+                <Sidebar.Item href="/resourses/products">Products</Sidebar.Item>
+                <Sidebar.Item href="/resourses/sales">Sales</Sidebar.Item>
+              </Sidebar.Collapse>
+
+              <Sidebar.Collapse icon={FaDropbox} label="Resourses">
+                <Sidebar.Item href="/resourses/products">Products</Sidebar.Item>
+                <Sidebar.Item href="/resourses/sales">Sales</Sidebar.Item>
+              </Sidebar.Collapse>
             </Sidebar.ItemGroup>
           </Sidebar.Items>
         </Sidebar>
+       
       </div>
+      {/* <Tables /> */}
     </>
   );
 }
