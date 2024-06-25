@@ -1,56 +1,59 @@
-"use client";
-// import Tables from"@/components/Tables";
+import ResourceCards from "@/components/ResourceCards";
 
-
-
-import { Sidebar } from "flowbite-react";
-import {
-  HiArrowSmRight,
-  HiChartPie,
-  HiInbox,
-  FaDropbox,
-  HiShoppingBag,
-  HiTable,
-  HiUser,
-} from "react-icons/hi";
-
-// import React, { useState } from "react";
+const resources = [
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23 - 06 - 2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23 - 06 - 2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23 - 06 - 2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23 - 06 - 2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23 - 06 - 2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23/06/2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+];
 
 export default function page() {
   return (
-    <>
-      <div className="bg-blue-950">
-        <Sidebar aria-label="Sidebar with multi-level dropdown example">
-          <Sidebar.Items>
-            <Sidebar.ItemGroup>
-              <Sidebar.Item href="#" icon={HiChartPie}>
-                CATEGORIES
-              </Sidebar.Item>
-              <Sidebar.Collapse icon={FaDropbox} label="Resourses">
-                <Sidebar.Item href="/resourses/products">Products</Sidebar.Item>
-                <Sidebar.Item href="/resourses/sales">Sales</Sidebar.Item>
-              </Sidebar.Collapse>
-
-              <Sidebar.Collapse icon={FaDropbox} label="Resourses">
-                <Sidebar.Item href="/resourses/products">Products</Sidebar.Item>
-                <Sidebar.Item href="/resourses/sales">Sales</Sidebar.Item>
-              </Sidebar.Collapse>
-
-              <Sidebar.Collapse icon={FaDropbox} label="Resourses">
-                <Sidebar.Item href="/resourses/products">Products</Sidebar.Item>
-                <Sidebar.Item href="/resourses/sales">Sales</Sidebar.Item>
-              </Sidebar.Collapse>
-
-              <Sidebar.Collapse icon={FaDropbox} label="Resourses">
-                <Sidebar.Item href="/resourses/products">Products</Sidebar.Item>
-                <Sidebar.Item href="/resourses/sales">Sales</Sidebar.Item>
-              </Sidebar.Collapse>
-            </Sidebar.ItemGroup>
-          </Sidebar.Items>
-        </Sidebar>
-       
-      </div>
-      {/* <Tables /> */}
-    </>
+    <div>
+      <h2>Resources</h2>
+      {resources.map((resource, index) => (
+        <div key={index}>
+          <ResourceCards resource={resource} />
+        </div>
+      ))}
+    </div>
   );
 }

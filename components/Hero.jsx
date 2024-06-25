@@ -1,5 +1,4 @@
-import React from "react";
-import ButtonDefault from "./ButtonDefault copy";
+import Button from "./Button";
 
 export default function Hero() {
   return (
@@ -15,7 +14,7 @@ export default function Hero() {
             consequatur nisi non esse voluptatibus omnis repudiandae.
           </p>
           <div>
-            <ButtonDefault>Register</ButtonDefault>
+            <Button className='bg-orange-600 border-none'>Register</Button>
           </div>
         </div>
 

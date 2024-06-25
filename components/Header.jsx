@@ -1,9 +1,5 @@
 import Link from "next/link";
-import React from "react";
-import Button from "./ButtonPrimary";
-import ButtonDefault from "./ButtonDefault copy";
-import ButtonPrimary from "./ButtonPrimary";
-import Register from "./Register";
+import Button from "./Button";
 
 export default function () {
   return (
@@ -28,9 +24,8 @@ export default function () {
         </nav>
 
         <div className="flex gap-4">
-          <ButtonDefault>sign In</ButtonDefault>
-          <ButtonPrimary><Link className="block w-full h-full" href={'/register'}>Register</Link></ButtonPrimary>
-       
+          <Button>Sign In</Button>
+          <Button className="bg-orange-600 border-none">Register</Button>
         </div>
       </div>
     </section>
