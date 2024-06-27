@@ -4,7 +4,7 @@ import Button from "./ButtonPrimary";
 import ButtonDefault from "./ButtonDefault copy";
 import ButtonPrimary from "./ButtonPrimary";
 
-export default function () {
+export default function Header() {
   return (
     <section className="bg-slate-900 p-4">
       <div className="container mx-auto flex justify-between  items-center">
