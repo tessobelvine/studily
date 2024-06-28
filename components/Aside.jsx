@@ -5,7 +5,8 @@ import { HiChartPie, HiChevronDown } from "react-icons/hi";
 
 export default function Aside() {
   return (
-    <Sidebar aria-label="Sidebar with multi-level dropdown example">
+    
+    <Sidebar aria-label="Sidebar with multi-level dropdown  example" className="bg-blue-900">
       <Sidebar.Items>
         <Sidebar.ItemGroup>
           <Sidebar.Item href="#" icon={HiChartPie}>
@@ -33,5 +34,6 @@ export default function Aside() {
         </Sidebar.ItemGroup>
       </Sidebar.Items>
     </Sidebar>
+
   );
 }

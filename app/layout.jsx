@@ -13,9 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="">
         <Header />
-        <main className="container m-auto p-4 min-h-screen ">{children}</main>
+        <main className="container m-auto p-4 min-h-screen">{children}</main>
         <Footer />
         <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
       </body>

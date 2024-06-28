@@ -1,4 +1,6 @@
-import ResourceCards from "@/components/ResourceCards";
+import React from "react";
+import Image from "next/image";
+import ResourceCards from "./ResourceCards";
 
 const resources = [
   {
@@ -45,14 +47,12 @@ const resources = [
   },
 ];
 
-export default function page() {
+export default function SecondAside() {
   return (
-    <div>
-      <h2>Resources</h2>
+    <div className="bg-blue-900 p-4">
       {resources.map((resource, index) => (
-        <div key={index} className="flex border-b  justify-between items-center">
+        <div key={index} className="border-b">
           <ResourceCards resource={resource} />
-          <div className="text-white">Hello</div>
         </div>
       ))}
     </div>
