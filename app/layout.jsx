@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import "./globals.css";
+import Script from "next/script";
+
 
 export const metadata = {
   title: "Create Next App",
@@ -10,10 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-slate-950">
         <Header />
-        <main className="container m-auto p-4 min-h-screen">{children}</main>
+        <main className="container m-auto min-h-screen pt-8">{children}</main>
         <Footer />
+        <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
       </body>
     </html>
   );

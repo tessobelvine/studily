@@ -1,10 +1,10 @@
-import React from "react";
-import ButtonDefault from "./ButtonDefault copy";
+import Button from "./Button";
+
 
 export default function Hero() {
   return (
     <>
-      <div className="rounded flex flex-col lg:flex-row gap-8 bg-opacity-1 bg-slate-950 p-8">
+      <div className="bg-[url('/Images/dark-bg2.jpg)] w=[500px] h=[500px] bg-cover bg-center rounded flex flex-col lg:flex-row gap-8 p-8">
         <div className="flex-1">
           <h1 className="text-blue-900 text-3xl font-extrabold mb-3">
             Lorem ipsum dolor sit amet.
@@ -15,7 +15,7 @@ export default function Hero() {
             consequatur nisi non esse voluptatibus omnis repudiandae.
           </p>
           <div>
-            <ButtonDefault>Register</ButtonDefault>
+            <Button className='bg-orange-600 border-none'>Register</Button>
           </div>
         </div>
 

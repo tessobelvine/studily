@@ -3,7 +3,7 @@ import React from "react";
 export default function cards() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row gap-8 bg-gray-50 p-4 py-24">
+      <div className="flex flex-col lg:flex-row gap-8 bg-slate-900  p-4 py-24">
         <div className="flex-1 min-h-48 p-4 rounded-xl bg-orange-500 text-white ">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
