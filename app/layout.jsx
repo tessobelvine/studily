@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="">
         <Header />
-        <main className="container m-auto p-4 min-h-screen">{children}</main>
+        <main className="container m-auto min-h-screen">{children}</main>
         <Footer />
         <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
       </body>

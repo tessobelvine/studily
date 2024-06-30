@@ -22,7 +22,6 @@ export default function () {
           <Link href={"/resources"}>Resources</Link>
           <Link href={"/contact"}>Contact Us</Link>
         </nav>
-
         <div className="flex gap-4">
           <Button>Sign In</Button>
           <Button className="bg-orange-600 border-none">Register</Button>
