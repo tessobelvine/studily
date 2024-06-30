@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import ResourceCards from "@/components/ResourceCards";
 
 const resources = [
