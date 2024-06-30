@@ -23,8 +23,7 @@ export default function Footer() {
         <nav className="flex flex-col gap-4 justify-between font-medium text-gray-700 text-l hover:text-sky-500">
           <h1 className="text-white text-2xl">Forum</h1>
           <Link href={"/forum"}>Latest Post</Link>
-          <Link href={"/forum"}>Latest Resources</Link>
-         
+          <Link href={"/forum"}>Latest Resources</Link>      
         </nav>
         <nav className="flex flex-col gap-4 justify-between  font-medium text-gray-700 text-l hover:text-sky-500">
           <h1 className="text-white text-2xl">Contact Us</h1>
