@@ -1,9 +1,15 @@
+import {
+  SignInButton,
+  SignUpButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs';
 import Link from "next/link";
-import Button from "./Button";
 
-export default function () {
+export default function page() {
   return (
-    <section className="bg-slate-900 p-4 sticky top-0">
+    <section className="bg-slate-900 p-4 fixed left-0 right-0 top-0 z-50">
       <div className="container mx-auto flex justify-between  items-center ">
         <div className="flex gap-14 justify-between">
           <Link
@@ -22,10 +28,16 @@ export default function () {
           <Link href={"/resources"}>Resources</Link>
           <Link href={"/contact"}>Contact Us</Link>
         </nav>
-
-        <div className="flex gap-4">
-          <Button>Sign In</Button>
-          <Button className="bg-orange-600 border-none">Register</Button>
+        <div className="flex gap-6 text-white">
+          <SignedOut>
+            <SignInButton />
+          </SignedOut>
+          <SignedOut>
+            <SignUpButton />
+          </SignedOut>
+          <SignedIn>
+            <UserButton />
+          </SignedIn>
         </div>
       </div>
     </section>
