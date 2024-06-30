@@ -1,8 +1,10 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import {
+  ClerkProvider
+} from '@clerk/nextjs';
 import Script from "next/script";
+import './globals.css';
 
 
 export const metadata = {
@@ -12,13 +14,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="bg-slate-950">
-        <Header />
-        <main className="container m-auto min-h-screen pt-8">{children}</main>
-        <Footer />
-        <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
-      </body>
-    </html>
+    <ClerkProvider>
+
+      <html lang="en">
+        <body className="bg-slate-950">
+          <Header />
+          <main className="container m-auto min-h-screen pt-8">{children}</main>
+          <Footer />
+          <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
+
