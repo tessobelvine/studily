@@ -1,6 +1,4 @@
 import Link from "next/link";
-import React from "react";
-import Button from "./ButtonPrimary";
 import ButtonDefault from "./ButtonDefault copy";
 import ButtonPrimary from "./ButtonPrimary";
 
