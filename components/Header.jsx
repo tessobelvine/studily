@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Button from "./Button";
 
-export default function () {
+export default function page() {
   return (
-    <section className="bg-slate-900 p-4 sticky top-0">
+    <section className="bg-slate-900 p-4 fixed left-0 right-0 top-0 z-50">
       <div className="container mx-auto flex justify-between  items-center ">
         <div className="flex gap-14 justify-between">
           <Link

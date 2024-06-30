@@ -7,7 +7,7 @@ export default function ResourceCards({ resource }) {
         <Image
           className="w-8 h-8 object-cover rounded-full"
           src={resource.imageSrc}
-          width={800}
+          alt={resource.title}          width={800}
           height={800}
         />
         <div>
