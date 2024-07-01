@@ -4,7 +4,7 @@ import Button from "./Button";
 export default function Hero() {
   return (
     <>
-      <div className="bg-[url('/Images/dark-bg2.jpg)] w=[500px] h=[500px] bg-cover bg-center rounded flex flex-col lg:flex-row gap-8 p-8">
+      <div className="rounded flex flex-col lg:flex-row gap-8 p-8">
         <div className="flex-1">
           <h1 className="text-blue-900 text-3xl font-extrabold mb-3">
             Lorem ipsum dolor sit amet.
@@ -23,10 +23,10 @@ export default function Hero() {
           <div className="w-24 bg-white h-64 rounded-full text-center">
             hello
           </div>
-          <div className="w-32 h-80 bg-white rounded-full text-center">
+          <div className="w-32 h-80 bg-white bg-[url('/Images/IMG_0415.jpeg')] bg-cover bg-center bg-no-repeat rounded-full text-center">
             hello
           </div>
-          <div className="w-24 bg-white h-64 rounded-full text-center">
+          <div className="w-24 bg-white bg-[url('/Images/IMG_0415.jpeg')] bg-cover bg-right bg-no-repeat h-64 rounded-full object-left-0">
             hello
           </div>
         </div>

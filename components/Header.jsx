@@ -1,10 +1,10 @@
-import {
-  SignInButton,
-  SignUpButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs';
+// import {
+//   SignInButton,
+//   SignUpButton,
+//   SignedIn,
+//   SignedOut,
+//   UserButton
+// } from '@clerk/nextjs';
 import Link from "next/link";
 
 export default function page() {
@@ -28,7 +28,7 @@ export default function page() {
           <Link href={"/resources"}>Resources</Link>
           <Link href={"/contact"}>Contact Us</Link>
         </nav>
-        <div className="flex gap-6 text-white">
+        {/* <div className="flex gap-6 text-white">
           <SignedOut>
             <SignInButton />
           </SignedOut>
@@ -38,7 +38,7 @@ export default function page() {
           <SignedIn>
             <UserButton />
           </SignedIn>
-        </div>
+        </div> */}
       </div>
     </section>
   );
