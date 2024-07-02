@@ -8,11 +8,8 @@ export default function layout({ children }) {
         <aside className="hidden lg:flex flex-col gap-8 p-4 ">
           <Aside />
           <SecondAside />
-          <span className="">
-            <SecondAside />
-          </span>
         </aside>
-        <main className="lg:flex-1 px-4  opacity-100">
+        <main className="lg:flex-1 px-4 opacity-100">
           {children}
         </main>
       </section>

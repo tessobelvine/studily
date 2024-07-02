@@ -30,10 +30,7 @@ export default function page() {
         </nav>
         <div className="flex gap-6 text-white">
           <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedOut>
-            <SignUpButton />
+            <SignInButton className="border p-4 py-1 rounded text-sm" />
           </SignedOut>
           <SignedIn>
             <UserButton />
