@@ -28,17 +28,14 @@ export default function page() {
           <Link href={"/resources"}>Resources</Link>
           <Link href={"/contact"}>Contact Us</Link>
         </nav>
-        {/* <div className="flex gap-6 text-white">
+        <div className="flex gap-6 text-white">
           <SignedOut>
-            <SignInButton />
-          </SignedOut>
-          <SignedOut>
-            <SignUpButton />
+            <SignInButton className="border p-4 py-1 rounded text-sm" />
           </SignedOut>
           <SignedIn>
             <UserButton />
           </SignedIn>
-        </div> */}
+        </div>
       </div>
     </section>
   );

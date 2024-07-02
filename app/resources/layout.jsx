@@ -9,7 +9,7 @@ export default function layout({ children }) {
           <Aside />
           <SecondAside />
         </aside>
-        <main className="lg:flex-1 px-4  opacity-100">
+        <main className="lg:flex-1 px-4 opacity-100">
           {children}
         </main>
       </section>

@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    // <ClerkProvider>
+    <ClerkProvider>
       <html lang="en">
         <body className="bg-slate-950 pt-16 text-gray-200">
           <Header />
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
           <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
         </body>
       </html>
-    // </ClerkProvider>
+    </ClerkProvider>
   );
 }
 
