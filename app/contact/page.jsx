@@ -52,7 +52,7 @@ export default function page() {
               className="block p-2 w-full text-sm text-gray rounded-lg border border-gray-300 dark:placeholder dark:text-white border-none "></textarea>
           </div>
           <div className="flex gap-2 items-center bg-black w-48 rounded py-2 px-4 mt-16">
-          <FaPaperPlane color="blue" size={22}/>
+          <FaPaperPlane color="white" size={22}/>
           <button className=" text-white ">Send message</button>
           </div>
         </div>
