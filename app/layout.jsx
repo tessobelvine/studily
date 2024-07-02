@@ -1,10 +1,8 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import {
-  ClerkProvider
-} from '@clerk/nextjs';
 import Script from "next/script";
 import './globals.css';
+import { ClerkProvider } from "@clerk/nextjs";
 
 
 export const metadata = {
