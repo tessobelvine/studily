@@ -13,22 +13,22 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col sm:flex-row gap-16 justify-between items-start">
-          <nav className="flex flex-col gap-4 justify-between  font-medium text-gray-700 text-l ">
+          <nav className="flex flex-col gap-4 justify-between  font-medium text-gray-500 text-l ">
             <h1 className="text-white text-2xl">Resources</h1>
-            <Link href={"/resources"} className="hover:text-sky-500">Caterories</Link>
-            <Link href={"/resources"} className="hover:text-sky-500">Top Resources</Link>
-            <Link href={"/resources"} className="hover:text-sky-500">Latest Review</Link>
+            <Link href={"/resources"} className="hover:text-gray-300">Caterories</Link>
+            <Link href={"/resources"} className="hover:text-gray-300">Top Resources</Link>
+            <Link href={"/resources"} className="hover:text-gray-300">Latest Review</Link>
           </nav>
           <nav className="flex flex-col gap-4 justify-between font-medium text-gray-700 text-l ">
             <h1 className="text-white text-2xl">Forum</h1>
-            <Link href={"/forum"} className="hover:text-sky-500">Latest Post</Link>
-            <Link href={"/forum"} className="hover:text-sky-500">Latest Resources</Link>
+            <Link href={"/forum"} className="hover:text-gray-300">Latest Post</Link>
+            <Link href={"/forum"} className="hover:text-gray-300">Latest Resources</Link>
           </nav>
           <nav className="flex flex-col gap-4 justify-between  font-medium text-gray-700 text-l ">
             <h1 className="text-white text-2xl">Contact Us</h1>
-            <Link href={"/contact"} className="hover:text-sky-500">Home</Link>
-            <Link href={"/contact"} className="hover:text-sky-500">Help</Link>
-            <Link href={"/contact"} className="hover:text-sky-500">Contact</Link>
+            <Link href={"/contact"} className="hover:text-gray-300">Home</Link>
+            <Link href={"/contact"} className="hover:text-gray-300">Help</Link>
+            <Link href={"/contact"} className="hover:text-gray-300">Contact</Link>
           </nav>
         </div>
       </div>

@@ -58,11 +58,11 @@ export default function page() {
         </h1>
       </div>
       <div>
-        <div className="bg-slate-950 rounded shadow-lg overflow-hidden">
+        <div className="bg-slate-900 rounded shadow overflow-hidden">
           {resources.map((resource, index) => (
             <div
               key={index}
-              className={`flex justify-between items-center hover:bg-slate-900 p-4  cursor-pointer ${index !== resources.length - 1 ? "border-b border-b-gray-800" : ""}`}>
+              className={`flex justify-between items-center px-6 ${index !== resources.length - 1 ? "border-b border-b-gray-800" : ""}`}>
               <ResourceCards resource={resource} />
               <div className="text-white">Hello</div>
             </div>
