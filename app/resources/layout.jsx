@@ -1,7 +1,7 @@
 import Aside from "@/components/Aside";
 import SecondAside from "@/components/SecondAside";
 
-export default function layout({ children }) {
+export default function ({ children }) {
   return (
     <div className="container py-16 px-4 mx-auto bg-gray-950">
       <section className="flex  flex-col gap-8 lg:flex-row lg:items-start">
