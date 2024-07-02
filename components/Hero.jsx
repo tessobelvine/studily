@@ -1,4 +1,6 @@
+import { SignUpButton } from "@clerk/nextjs";
 import Button from "./Button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -13,27 +15,30 @@ export default function Hero() {
             collaboration our growth is limited to our own perspectives
           </p>
           <div className="flex gap-8 items-center ">
-            <button className="bg-orange-600 border-none text-white px-8 py-2 rounded hover:bg-indigo-700">
-              Register
-            </button>
+            <SignUpButton className="bg-orange-600 border-none text-white px-8 py-3 rounded hover:bg-slate-900">
+              <button >
+                Get started
+              </button>
+            </SignUpButton>
+
 
             {/* <div> */}
-              <button className="bg-transparent border-2 border-l-blue-700 border-t-green-500 border-b-pink-500 border-r-orange-500  text-white px-8 py-2 rounded hover:border-blue-700">
-                Sign in
-              </button>
+            <Link href={'/about'} className="bg-transparent border-2 border-l-blue-700 border-t-green-500 border-b-pink-500 border-r-orange-500  text-white px-8 py-2 rounded hover:border-blue-700 hover:bg-blue-700 ">
+             Learn more
+            </Link>
             {/* </div> */}
           </div>
         </div>
 
         <div className="flex flex-1 gap-2 justify-center items-center">
           <div className="w-24 bg-white bg-[url('/Images/IMG_0415.jpeg')] bg-cover bg-left bg-no-repeat h-64 rounded-full text-center">
-            
+
           </div>
           <div className="w-32 h-80 bg-white bg-[url('/Images/IMG_0415.jpeg')] bg-cover bg-center bg-no-repeat rounded-full text-center">
-            
+
           </div>
           <div className="w-24 bg-white bg-[url('/Images/IMG_0415.jpeg')] bg-cover bg-right bg-no-repeat h-64 rounded-full object-left-0">
-            
+
           </div>
         </div>
       </div>

@@ -1,13 +1,10 @@
-// import {
-//   SignInButton,
-//   SignUpButton,
-//   SignedIn,
-//   SignedOut,
-//   UserButton
-// } from '@clerk/nextjs';
-import { ToggleSwitch } from "flowbite-react";
+import {
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs';
 import Link from "next/link";
-import { FaHamburger } from "react-icons/fa";
 
 
 export default function page() {
@@ -32,15 +29,17 @@ export default function page() {
           <Link href={"/resources"}>Resources</Link>
           <Link href={"/contact"}>Contact Us</Link>
         </nav>
-        {/* <div className="flex gap-6 text-white">
+        <div className="flex gap-6 text-white">
           <SignedOut>
-            <SignInButton className="border p-4 py-1 rounded text-sm" />
+            <SignInButton className="border p-4 py-1 text-sm rounded">
+              <button>Get started</button>
+            </SignInButton>
           </SignedOut>
           <SignedIn>
             <UserButton />
           </SignedIn>
-        </div> */}
-     
+        </div>
+
       </div>
     </section>
   );
