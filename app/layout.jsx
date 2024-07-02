@@ -14,17 +14,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
-
+    // <ClerkProvider>
       <html lang="en">
-        <body className="bg-slate-950">
+        <body className="bg-slate-950 pt-16 text-gray-200">
           <Header />
-          <main className="container m-auto min-h-screen pt-8">{children}</main>
+          <main className="container m-auto min-h-screen ">{children}</main>
           <Footer />
           <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
         </body>
       </html>
-    </ClerkProvider>
+    // </ClerkProvider>
   );
 }
 

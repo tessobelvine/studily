@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ResourceCards({ resource }) {
   return (
-    <div className="flex lg:flex-row justify-center items-center gap-4 py-3  text-gray-300">
+    <div className="flex lg:flex-row justify-center items-center gap-4 py-3  text-gray-300 rounded overflow-hidden">
       <div className="flex-1 flex gap-4 py-2 text-gray-300">
         <Image
           className="w-8 h-8 object-cover rounded-full"
