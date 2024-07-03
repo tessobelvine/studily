@@ -25,8 +25,8 @@ model Resource {
   id          String   @id @default(uuid())
   title       String
   description String
+  category    String
   filePath    String
-  // Relation to user
   userId      String
   user        User     @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
   createdAt   DateTime @default(now())

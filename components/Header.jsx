@@ -24,19 +24,19 @@ export default function Header() {
         </div>
 
         <nav className="lg:flex gap-8 justify-between  font-medium hidden text-white text-l">
-          <Link href={"/forum"}>Forum</Link>
+          <Link href={"/forum"}>Forums</Link>
           <Link href={"/resources"}>Resources</Link>
-          <Link href={"/contact"}>Contact Us</Link>
+          <Link href={"/contact"}>Contact us</Link>
         </nav>
         <div className="flex gap-6 text-white">
-          <SignedOut>
+          {/* <SignedOut>
             <SignInButton className="border p-4 py-1 text-sm rounded">
               <button>Get started</button>
             </SignInButton>
           </SignedOut>
           <SignedIn>
             <UserButton />
-          </SignedIn>
+          </SignedIn> */}
         </div>
       </div>
     </section>
