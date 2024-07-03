@@ -1,8 +1,9 @@
-import Footer from "@/components/Footer";
+
 import Header from "@/components/Header";
 import Script from "next/script";
 import './globals.css';
 import { ClerkProvider } from "@clerk/nextjs";
+import FooterSection from "@/components/FooterSection";
 
 
 export const metadata = {
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
         <body className="bg-slate-950 pt-16 text-gray-200">
           <Header />
           <main className="container m-auto min-h-screen ">{children}</main>
-          <Footer />
+          <FooterSection />
           <Script src="../node_modules/flowbite/dist/flowbite.min.js"></Script>
         </body>
       </html>

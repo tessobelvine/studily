@@ -1,12 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 // import Link from "next/link";
 import React from "react";
-import { FaFacebook, FaPhone, FaPaperPlane, FaEnvelopeOpen, FaLocationArrow, FaTwitter, FaWhatsapp, FaInstagram, FaLinkedin, FaTwitterSquare, FaFontAwesome } from "react-icons/fa";
-import { HiLocationMarker } from "react-icons/hi";
+import { FaEnvelopeOpen, FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaPaperPlane, FaPhone, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 export default function page() {
   return (
     <section className="block p-8 content-center mb-4 lg:px-64 ">
-  <marquee className="text-white text-2xl font-extrabold pt-8 animation-bounce">Let's Get In Touch</marquee>
+      <marquee className="text-white text-2xl font-extrabold pt-8 animation-bounce">Let's Get In Touch</marquee>
 
       <div className="flex flex-col gap-8 lg:flex-row  bg-gradient-to-r from-blue-500 to-indigo-200 rounded lg:items-start mt-8">
         <div className="flex-1 bg-gradient-to-r from-blue-500 to-indigo-900 p-5 h-46 rounded">
@@ -52,8 +52,8 @@ export default function page() {
               className="block p-2 w-full text-sm text-gray rounded-lg border border-gray-300 dark:placeholder dark:text-white border-none "></textarea>
           </div>
           <div className="flex gap-2 items-center bg-black w-48 rounded py-2 px-4 mt-16">
-          <FaPaperPlane color="white" size={22}/>
-          <button className=" text-white ">Send message</button>
+            <FaPaperPlane color="white" size={22} />
+            <button className=" text-white ">Send message</button>
           </div>
         </div>
 
@@ -63,42 +63,38 @@ export default function page() {
           <p className="font-bold text-xl">We are open for any suggestion or just to have a chat</p>
           <div className="">
             <div className="flex gap-4 pt-8 items-center ">
-            <FaLocationArrow size={35} color="indigo" className="pt-4" />
-            <p className="flex gap-4"><span className=" font-bold block">Address:</span>Bamenda, Cameroon</p>
+              <FaLocationArrow size={35} color="indigo" className="pt-4" />
+              <p className="flex gap-4"><span className=" font-bold block">Address:</span>Bamenda, Cameroon</p>
             </div>
             <div className="flex gap-4 pt-5 items-center ">
-            <FaPhone size={35} color="indigo" className="pt-4" />
-            <p className="flex gap-4"><span className="font-bold hover:text-blue-500">Phone:</span>+237 655-616-308</p>
+              <FaPhone size={35} color="indigo" className="pt-4" />
+              <p className="flex gap-4"><span className="font-bold hover:text-blue-500">Phone:</span>+237 655-616-308</p>
             </div>
             <div className="flex gap-4 pt-5 items-center ">
-            <FaEnvelopeOpen size={35} color="indigo" className="pt-4" />
-            <p className="flex gap-4"><span className="font-bold">Email:</span>meidabelvine@gmail.com</p>
-            </div>
-           
-            <div className="flex gap-4 pt-24 items-center px-20">
-              <div>
-                <FaFacebook  size={30} color="blue"/>
-              </div>
-              <div>
-                <FaWhatsapp  size={30} color="green"/>
-              </div>
-              <div>
-                <FaTwitter size={30} color="blue"/>
-              </div>
-              <div>
-                <FaInstagram  size={30} color="#D90166"/>
-              </div>
-              <div>
-                <FaLinkedin  size={30} color="blue"/>
-              </div>
+              <FaEnvelopeOpen size={35} color="indigo" className="pt-4" />
+              <p className="flex gap-4"><span className="font-bold">Email:</span>meidabelvine@gmail.com</p>
             </div>
 
-         
-          
+            <div className="flex gap-4 pt-24 items-center px-20">
+              <div>
+                <FaFacebook size={30} color="blue" />
+              </div>
+              <div>
+                <FaWhatsapp size={30} color="green" />
+              </div>
+              <div>
+                <FaTwitter size={30} color="blue" />
+              </div>
+              <div>
+                <FaInstagram size={30} color="#D90166" />
+              </div>
+              <div>
+                <FaLinkedin size={30} color="blue" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-  
     </section>
   );
 }
