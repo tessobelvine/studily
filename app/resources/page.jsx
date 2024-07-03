@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import ResourceCards from "@/components/ResourceCards";
-
+import {AiFillLike} from 'react-icons/ai'
 const resources = [
   {
     title: "Pdf doc for meds school",
@@ -64,7 +64,8 @@ export default function page() {
               key={index}
               className={`flex justify-between items-center px-6 ${index !== resources.length - 1 ? "border-b border-b-gray-800" : ""}`}>
               <ResourceCards resource={resource} />
-              <div className="text-white">Hello</div>
+              <AiFillLike color="blue" size={50}/>
+            
             </div>
           ))}
         </div>
