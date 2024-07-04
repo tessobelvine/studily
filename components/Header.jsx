@@ -1,4 +1,4 @@
-// import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 
@@ -24,14 +24,14 @@ export default function Header() {
           <Link href={"/contact"}>Contact us</Link>
         </nav>
         <div className="flex gap-6 text-white">
-          {/* <SignedOut>
+          <SignedOut>
             <SignInButton className="border p-4 py-1 text-sm rounded">
               <button>Get started</button>
             </SignInButton>
           </SignedOut>
           <SignedIn>
             <UserButton />
-          </SignedIn> */}
+          </SignedIn>
         </div>
       </div>
     </section>

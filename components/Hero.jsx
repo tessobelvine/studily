@@ -1,4 +1,4 @@
-// import { SignUpButton } from "@clerk/nextjs";
+import { SignUpButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default function Hero() {
@@ -14,17 +14,17 @@ export default function Hero() {
             collaboration our growth is limited to our own perspectives
           </p>
           <div className="flex gap-8 items-center ">
-            {/* <SignUpButton className="bg-orange-600 border-none text-white px-8 py-3 rounded hover:bg-slate-900">
+            <SignUpButton className="bg-orange-600 border-none text-white px-8 py-3 rounded hover:bg-slate-900">
               <button>
                 Get started
               </button>
-            </SignUpButton> */}
+            </SignUpButton>
 
-            {/* <div> */}
-            <Link href={'/contact'} className="bg-transparent border-2 border-l-blue-700 border-t-green-500 border-b-pink-500 border-r-orange-500  text-white px-8 py-2 rounded hover:border-blue-700 hover:bg-blue-700 ">
-              Learn more
-            </Link>
-            {/* </div> */}
+            <div>
+              <Link href={'/contact'} className="bg-transparent border-2 border-l-blue-700 border-t-green-500 border-b-pink-500 border-r-orange-500  text-white px-8 py-2 rounded hover:border-blue-700 hover:bg-blue-700 ">
+                Learn more
+              </Link>
+            </div>
           </div>
         </div>
 
