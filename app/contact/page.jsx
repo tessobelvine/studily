@@ -57,18 +57,18 @@ export default function page() {
           <p className="font-bold text-xl mt-4">We are open for any suggestion or 
             just to have a chat</p>
           <div className="my-4 text-gray-400">
-            <div className="flex gap-4 items-center ">
-              <FaLocationArrow size={35} className="pt-4" />
+            <div className="flex gap-4 items-center mb-4 ">
+              <FaLocationArrow className="" />
               <p className="flex gap-4"><span className=" font-bold block">Address:</span>Bamenda, Cameroon</p>
             </div>
 
-            <div className="flex gap-4  items-center ">
-              <FaPhone size={35} className="pt-4" />
+            <div className="flex gap-4 items-center mb-4 ">
+              <FaPhone className="" />
               <p className="flex gap-4"><span className="font-bold hover:text-blue-500">Phone:</span>+237 655-616-308</p>
             </div>
 
-            <div className="flex gap-4 items-center ">
-              <FaEnvelopeOpen size={35} className="pt-4" />
+            <div className="flex gap-4 items-center mb-4 ">
+              <FaEnvelopeOpen className="" />
               <p className="flex gap-4"><span className="font-bold">Email:</span>meidabelvine@gmail.com</p>
             </div>
           </div>

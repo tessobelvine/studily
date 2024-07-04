@@ -13,7 +13,7 @@ export default function Hero() {
             The most valuable resource that we all have is each other. Without
             collaboration our growth is limited to our own perspectives
           </p>
-          <div className="flex gap-8 items-center ">
+          <div className="flex gap-8 items-center flex-col lg:flex-row ">
             <SignUpButton className="bg-orange-600 border-none text-white px-8 py-3 rounded hover:bg-slate-900">
               <button>
                 Get started
