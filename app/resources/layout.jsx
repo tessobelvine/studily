@@ -1,6 +1,6 @@
 
-import Aside from "@/components/Aside";
-import SecondAside from "@/components/SecondAside";
+import Aside from "../../components/Aside";
+import SecondAside from "../../components/SecondAside";
 
 export default function layout({ children }) {
   return (

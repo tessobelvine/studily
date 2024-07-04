@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import ResourceCards from "@/components/ResourceCards";
+import ResourceCards from "../../components/ResourceCards";
 import Link from "next/link";
 import { FaPlus } from "react-icons/fa";
 

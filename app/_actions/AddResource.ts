@@ -20,7 +20,7 @@ z.object({
 })
 
 
-async function addResource(formData) {
+async function addResource(formData: { get: (arg0: string) => any }) {
     const titleValue = formData.get('title')
     const descriptionValue = formData.get('description')
     const categoryValue = formData.get('category')

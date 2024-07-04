@@ -5,13 +5,13 @@ import { BsSend } from 'react-icons/bs'
 import { Label } from './ui/label'
 import { Input } from './ui/input'
 import { Textarea } from './ui/textarea'
-import { clientAction } from '@/app/_actions/AddResource'
+import { clientAction } from '../app/_actions/AddResource'
 
 export default function AddResource() {
 
     return (
         <div>
-            <form action={clientAction} className='p-4 border border-slate-700 rounded-2xl '>
+            <form action={clientAction}  className='p-4 border border-slate-700 rounded-2xl '>
                 <div className="form-control flex flex-col gap-1 mb-8">
                     <Label htmlFor="title">Title</Label>
                     <Input type="text" id='title' name='title' placeholder='Enter resource name' className='text-slate-800' required />
