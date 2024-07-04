@@ -1,21 +1,27 @@
+'use client'
+
 import React from 'react'
-import { BsAirplane, BsEnvelope, BsSend } from 'react-icons/bs'
+import { BsSend } from 'react-icons/bs'
 
 export default function AddResource() {
+    const clientAction = async (formData) => {
+        console.log(formData.get('title'), formData.get('description'), formData.get('category'), formData.get('filepath'))
+    }
+
     return (
         <div>
-            <form className=' p-6 border border-slate-700 rounded-2xl '>
+            <form action={clientAction} className='p-6 border border-slate-700 rounded-2xl '>
                 <div className="form-control flex flex-col gap-1 mb-8">
                     <label htmlFor="title">Title</label>
-                    <input type="text" id='title' name='title' placeholder='Enter resource name' required/>
-                </div>
-                <div className="form-control flex flex-col gap-1 mb-8">
-                    <label htmlFor="description">Description</label>
-                    <input type="text" id='description' name='description' placeholder='Description' required />
+                    <input type="text" id='title' name='title' placeholder='Enter resource name' className='text-slate-800' required />
                 </div>
                 <div className="form-control flex flex-col gap-1 mb-8">
                     <label htmlFor="category">Category</label>
-                    <input type="text" id='category' name='category' placeholder='Category' required />
+                    <input type="text" className='text-slate-800' id='category' name='category' placeholder='Category' required />
+                </div>
+                <div className="form-control flex flex-col gap-1 mb-8">
+                    <label htmlFor="description">Description</label>
+                    <textarea type="text" className='text-slate-800' id='description' name='description' placeholder='Description' required />
                 </div>
                 <div className="form-control flex flex-col gap-1 mb-8">
                     <label htmlFor="filePath">Resource file</label>

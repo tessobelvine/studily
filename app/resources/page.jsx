@@ -8,42 +8,42 @@ const resources = [
     title: "Pdf doc for meds school",
     category: "medicine",
     date: "23/06/2024",
-    decscription: "lorem ipsom dolor",
+    description: "lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor",
     imageSrc: "/images/landscape.png",
   },
   {
     title: "Pdf doc for meds school",
     category: "medicine",
     date: "23/06/2024",
-    decscription: "lorem ipsom dolor",
+    description: "lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor",
     imageSrc: "/images/landscape.png",
   },
   {
     title: "Pdf doc for meds school",
     category: "medicine",
     date: "23/06/2024",
-    decscription: "lorem ipsom dolor",
+    description: "lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor",
     imageSrc: "/images/landscape.png",
   },
   {
     title: "Pdf doc for meds school",
     category: "medicine",
     date: "23/06/2024",
-    decscription: "lorem ipsom dolor",
+    description: "lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor",
     imageSrc: "/images/landscape.png",
   },
   {
     title: "Pdf doc for meds school",
     category: "medicine",
     date: "23/06/2024",
-    decscription: "lorem ipsom dolor",
+    description: "lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor",
     imageSrc: "/images/landscape.png",
   },
   {
     title: "Pdf doc for meds school",
     category: "medicine",
     date: "23/06/2024",
-    decscription: "lorem ipsom dolor",
+    description: "lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor lorem ipsom dolor",
     imageSrc: "/images/landscape.png",
   },
 ];
@@ -67,9 +67,9 @@ export default function page() {
           {resources.map((resource, index) => (
             <div
               key={index}
-              className={`flex justify-between items-center px-6 ${index !== resources.length - 1 ? "border-b border-b-gray-800" : ""}`}>
+              className={`flex justify-between items-center px-6 gap-4 sm:gap-16 ${index !== resources.length - 1 ? "border-b border-b-gray-800" : ""}`}>
               <ResourceCards resource={resource} />
-              <div className="text-white">Hello</div>
+              <div className="text-white underline text-sm self-end mb-4 cursor-pointer hover:underline-offset-4">preview</div>
             </div>
           ))}
         </div>

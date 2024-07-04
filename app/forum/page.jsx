@@ -1,11 +1,62 @@
 /* eslint-disable react/no-unescaped-entities */
-// import Link from "next/link";
-import React from "react";
+import ResourceCards from "@/components/ResourceCards";
+import Link from "next/link";
+import { FaPlus } from "react-icons/fa";
+
+const resources = [
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23/06/2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23/06/2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23/06/2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23/06/2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23/06/2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+  {
+    title: "Pdf doc for meds school",
+    category: "medicine",
+    date: "23/06/2024",
+    decscription: "lorem ipsom dolor",
+    imageSrc: "/images/landscape.png",
+  },
+];
 
 export default function page() {
   return (
-    <section className="max-w-screen-lg mx-auto p-4 content-center mb-4 ">
-     <h2 className="text-white text-2xl font-extrabold pt-4">Top Forums</h2>
-    </section>
+    <div className="">
+
+      <h2 className=" animate-bounce text-white   font-extrabold text-2xl">
+        Forums
+      </h2>
+
+
+    </div>
   );
 }
