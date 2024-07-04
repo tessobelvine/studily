@@ -5,11 +5,9 @@ import { BsSend } from 'react-icons/bs'
 import { Label } from './ui/label'
 import { Input } from './ui/input'
 import { Textarea } from './ui/textarea'
+import { clientAction } from '@/app/_actions/AddResource'
 
 export default function AddResource() {
-    const clientAction = async (formData) => {
-        console.log(formData.get('title'), formData.get('description'), formData.get('category'), formData.get('file'), formData.get('image'))
-    }
 
     return (
         <div>
@@ -28,7 +26,7 @@ export default function AddResource() {
                 </div>
                 <div className="form-control flex flex-col gap-1 mb-12">
                     <Label htmlFor="file">Resource File</Label>
-                    <Input type="file" id='file' className="bg-transparent border-none"  name='file' required />
+                    <Input type="file" id='file' className="bg-transparent border-none" name='file' required />
                 </div>
                 <div className="form-control flex flex-col gap-1 mb-12">
                     <Label htmlFor="image">Image (Thumbnail)</Label>
