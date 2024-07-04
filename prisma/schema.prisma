@@ -18,7 +18,7 @@ model User {
   imageUrl    String?
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
-  resources   Resource[]
+  // resources   Resource[]
 }
 
 model Resource {
@@ -28,9 +28,9 @@ model Resource {
   category    String
   file        String
   image       String
-  userId      String
-  user        User     @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
+  // userId      String
+  // user        User     @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
   createdAt   DateTime @default(now())
 
-  @@index([userId])
+  // @@index([userId])
 }
