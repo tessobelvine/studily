@@ -9,7 +9,7 @@ export default function FooterSection() {
     return (
         <Footer container className="bg-slate-950 py-16">
             <div className="container mx-auto ">
-                <div className=" container mx-auto justify-between sm:flex sm:justify-between items-start ">
+                <div className="my-12 container mx-auto justify-between sm:flex sm:justify-between items-start ">
                     <div>
                         <Link
                             href={"/"}
@@ -43,7 +43,7 @@ export default function FooterSection() {
                     </div>
                 </div>
                 <Footer.Divider />
-                <div className="w-full sm:flex sm:items-center sm:justify-between">
+                <div className="mt-16 w-full sm:flex sm:items-center sm:justify-between">
                     <Footer.Copyright href="#" by="Tesso Belvine" year={2024} />
                     <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
                         <Footer.Icon href="#" icon={BsFacebook} />

@@ -3,12 +3,12 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <div className="rounded px-16 flex flex-col lg:flex-row gap-8">
+      <div className="rounded p-4 lg:px-16 flex flex-col lg:flex-row gap-8">
         <div className=" flex flex-col items-center lg:items-start ">
           <h1 className="text-center max-w-lg lg:text-start text-sky-500 text-4xl lg:text-6xl font-bold">
             Providing Best Resources For Brighter Future
           </h1>
-          <p className=" max-w-lg text-white text-center mb-10 lg:text-left pt-8 lg:text-2xl">
+          <p className=" max-w-lg text-stroke-2 text-stroke-black text-gray-100 text-center mb-10 lg:text-left pt-8 lg:text-2xl">
             The most valuable resource that we all have is each other. Without
             collaboration our growth is limited to our own perspectives
           </p>
