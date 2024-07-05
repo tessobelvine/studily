@@ -18,18 +18,19 @@ model User {
   imageUrl    String?
   createdAt   DateTime   @default(now())
   updatedAt   DateTime   @updatedAt
-  resources   Resource[]
+  // resources   Resource[]
 }
 
 model Resource {
   id          String   @id @default(uuid())
   title       String
   description String
-  filePath    String
-  // Relation to user
-  userId      String
-  user        User     @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
+  category    String
+  file        String
+  image       String
+  // userId      String
+  // user        User     @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
   createdAt   DateTime @default(now())
 
-  @@index([userId])
+  // @@index([userId])
 }

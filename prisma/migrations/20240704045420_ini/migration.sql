@@ -14,7 +14,9 @@ CREATE TABLE "Resource" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "title" TEXT NOT NULL,
     "description" TEXT NOT NULL,
-    "filePath" TEXT NOT NULL,
+    "category" TEXT NOT NULL,
+    "file" TEXT NOT NULL,
+    "image" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT "Resource_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User" ("clerkUserId") ON DELETE CASCADE ON UPDATE CASCADE
