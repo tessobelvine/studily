@@ -29,11 +29,11 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-1 gap-2 justify-center items-center xl:translate-x-1/4 xl:scale-125">
-          <div className="w-24 bg-white bg-[url('/Images/IMG_0415.jpeg')] bg-cover bg-left bg-no-repeat h-64 rounded-full text-center">
+          <div className="w-24 bg-white bg-[url('/Images/Fai.jpg')] bg-cover bg-left bg-no-repeat h-64 rounded-full text-center">
           </div>
-          <div className="w-32 h-80 bg-white bg-[url('/Images/IMG_0415.jpeg')] bg-cover bg-center bg-no-repeat rounded-full text-center">
+          <div className="w-32 h-80 bg-white bg-[url('/Images/Fai.jpg')] bg-cover bg-center bg-no-repeat rounded-full text-center">
           </div>
-          <div className="w-24 bg-white bg-[url('/Images/IMG_0415.jpeg')] bg-cover bg-right bg-no-repeat h-64 rounded-full object-left-0">
+          <div className="w-24 bg-white bg-[url('/Images/Fai.jpg')] bg-cover bg-right bg-no-repeat h-64 rounded-full object-left-0">
           </div>
         </div>
       </div>

@@ -44,7 +44,7 @@ export default function FooterSection() {
                 </div>
                 <Footer.Divider />
                 <div className="mt-16 w-full sm:flex sm:items-center sm:justify-between">
-                    <Footer.Copyright href="#" by="Tesso Belvine" year={2024} />
+                    <Footer.Copyright href="#" by="Leinyuy Sedrick" year={2025} />
                     <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
                         <Footer.Icon href="#" icon={BsFacebook} />
                         <Footer.Icon href="#" icon={BsInstagram} />

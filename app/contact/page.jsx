@@ -64,12 +64,12 @@ export default function page() {
 
             <div className="flex gap-4  items-center ">
               <FaPhone size={35} className="pt-4" />
-              <p className="flex gap-4"><span className="font-bold hover:text-blue-500">Phone:</span>+237 655-616-308</p>
+              <p className="flex gap-4"><span className="font-bold hover:text-blue-500">Phone:</span>+237 674-787-638</p>
             </div>
 
             <div className="flex gap-4 items-center ">
               <FaEnvelopeOpen size={35} className="pt-4" />
-              <p className="flex gap-4"><span className="font-bold">Email:</span>meidabelvine@gmail.com</p>
+              <p className="flex gap-4"><span className="font-bold">Email:</span>sedrickfai24@gmail.coms</p>
             </div>
           </div>
 
